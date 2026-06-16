@@ -1,0 +1,151 @@
+# RENCANA DESAIN PRODUK (RDP) WEB
+## Toko Handmade — Sweater, Topi, Cardigan, Tas & Bunga
+
+---
+
+## 1. IDENTITAS PROYEK
+
+| Item | Keterangan |
+|------|-----------|
+| Nama Proyek | Website Toko Produk Handmade |
+| Jenis Produk | Sweater, Topi, Cardigan, Tas, Bunga Handmade |
+| Platform | Website E-Commerce |
+| Target Pengguna | Pecinta produk buatan tangan, usia 18–40 tahun |
+
+---
+
+## 2. TUJUAN WEBSITE
+
+- Menampilkan dan menjual produk handmade secara online
+- Membangun kepercayaan pelanggan melalui tampilan yang estetis dan profesional
+- Memperluas jangkauan pasar di luar penjualan offline
+- Memudahkan pelanggan dalam memesan dan bertransaksi
+
+---
+
+## 3. DESKRIPSI PRODUK
+
+### 🧶 Sweater Handmade
+Sweater rajut buatan tangan dengan bahan berkualitas tinggi. Tersedia dalam berbagai warna dan ukuran (S, M, L, XL). Cocok untuk cuaca dingin maupun tampilan kasual sehari-hari. Setiap produk dibuat satu per satu dengan penuh perhatian dan ketelitian.
+
+### 🎩 Topi Handmade
+Topi rajut dan topi kain buatan tangan dengan desain unik yang tidak pasaran. Tersedia dalam model beanie, bucket hat, dan beret. Bahan lembut dan nyaman dipakai sepanjang hari.
+
+### 🧥 Cardigan Handmade
+Cardigan rajut tangan dengan berbagai motif — polos, stripe, hingga pola bunga. Tampilan elegan yang bisa dipadukan dengan berbagai outfit. Tersedia dalam edisi terbatas sesuai stok bahan.
+
+### 👜 Tas Handmade
+Tas anyam dan tas rajut buatan tangan dari bahan ramah lingkungan. Tersedia dalam ukuran mini, medium, dan tote bag. Desain fungsional namun tetap stylish untuk menemani aktivitas sehari-hari.
+
+### 🌸 Bunga Handmade
+Bunga dekorasi buatan tangan dari bahan kain flanel, rajutan, dan resin. Cocok sebagai dekorasi rumah, hadiah, maupun aksesoris. Tersedia dalam bentuk bouquet, single stem, dan rangkaian pajangan.
+
+---
+
+## 4. STRUKTUR HALAMAN WEBSITE
+
+### 4.1 Halaman Utama (Home)
+- Hero banner dengan foto produk unggulan
+- Tagline brand (contoh: *"Dibuat dengan Hati, Dipakai dengan Bangga"*)
+- Showcase produk terbaru
+- Testimoni pelanggan
+- CTA (Call-to-Action): "Belanja Sekarang"
+
+### 4.2 Halaman Produk (Catalog)
+- Filter produk berdasarkan kategori: Sweater / Topi / Cardigan / Tas / Bunga
+- Filter harga, warna, ukuran
+- Tampilan grid produk dengan foto, nama, harga, dan tombol "Tambah ke Keranjang"
+
+### 4.3 Halaman Detail Produk
+- Foto produk dari berbagai sudut
+- Deskripsi produk lengkap
+- Pilihan ukuran/warna
+- Informasi bahan & cara perawatan
+- Estimasi waktu pembuatan (karena handmade)
+- Tombol "Pesan Sekarang" / "Hubungi via WhatsApp"
+
+### 4.4 Halaman Tentang Kami (About)
+- Cerita di balik brand
+- Nilai produk handmade: unik, berkualitas, penuh cinta
+- Foto proses pembuatan
+
+### 4.5 Halaman Kontak
+- Form pemesanan custom
+- Nomor WhatsApp aktif
+- Link media sosial (Instagram, TikTok, Shopee, dsb.)
+
+---
+
+## 5. DESAIN UI/UX
+
+| Elemen | Keterangan |
+|--------|-----------|
+| **Warna Utama** | Warm beige (#F5ECD7), Dusty rose (#D4A5A5), Off-white (#FAFAFA) |
+| **Warna Aksen** | Sage green (#8FAF8F) atau Terracotta (#C17D5A) |
+| **Tipografi** | Heading: serif elegan (e.g., Playfair Display); Body: sans-serif bersih (e.g., Lato) |
+| **Gaya Visual** | Aesthetic, hangat, artisanal, natural |
+| **Layout** | Clean, minimalis, banyak whitespace agar produk menonjol |
+| **Foto Produk** | Flat lay, lifestyle shot, dan close-up detail handmade |
+
+---
+
+## 6. FITUR UTAMA WEBSITE
+
+- ✅ Katalog produk dengan filter & pencarian
+- ✅ Keranjang belanja & checkout
+- ✅ Integrasi pembayaran (Transfer Bank, QRIS, COD)
+- ✅ Tombol order via WhatsApp
+- ✅ Formulir custom order
+- ✅ Galeri foto proses handmade
+- ✅ Halaman testimoni & ulasan pelanggan
+- ✅ Responsive mobile-friendly
+- ✅ Koneksi ke media sosial & marketplace
+
+---
+
+## 7. TEKNOLOGI YANG DIREKOMENDASIKAN
+
+| Kebutuhan | Pilihan |
+|-----------|---------|
+| Platform CMS | WordPress + WooCommerce / Shopify |
+| Hosting | Niagahoster / Dewaweb / Hostinger |
+| Domain | .com atau .id sesuai nama brand |
+| Pembayaran | Midtrans / Xendit (untuk pasar Indonesia) |
+| Analitik | Google Analytics + Meta Pixel |
+
+---
+
+## 8. TIMELINE PENGEMBANGAN
+
+| Fase | Aktivitas | Durasi |
+|------|-----------|--------|
+| Fase 1 | Riset & wireframe desain | 1 minggu |
+| Fase 2 | Desain UI (mockup visual) | 1–2 minggu |
+| Fase 3 | Development & integrasi fitur | 2–3 minggu |
+| Fase 4 | Input konten & foto produk | 1 minggu |
+| Fase 5 | Testing & revisi | 3–5 hari |
+| Fase 6 | Launch & promosi | 1 minggu |
+| **Total** | | **±7–8 minggu** |
+
+---
+
+## 9. TARGET PASAR
+
+- Wanita usia 18–35 tahun yang menyukai produk unik dan handmade
+- Pecinta fashion lokal dan slow fashion
+- Pembeli produk hadiah (bunga, tas mini, topi)
+- Pelanggan yang mencari produk custom/personalisasi
+
+---
+
+## 10. CATATAN KHUSUS PRODUK HANDMADE
+
+> Karena setiap produk dibuat secara manual, perlu dicantumkan informasi berikut di website:
+> - **Waktu produksi:** estimasi 3–7 hari kerja per item
+> - **Stok terbatas:** setiap produk bersifat limited edition
+> - **Variasi warna:** warna aktual dapat sedikit berbeda dari foto karena pencahayaan
+> - **Custom order:** pelanggan bisa request warna/ukuran tertentu
+
+---
+
+*Dokumen RDP ini bersifat panduan awal dan dapat dikembangkan sesuai kebutuhan brand.*
