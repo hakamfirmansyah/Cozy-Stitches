@@ -442,26 +442,20 @@ function updateQuantity(productId, change) {
 // Display cart
 function displayCart() {
     const cartItems = document.getElementById('cartItems');
-    const cartTotal = document.getElementById('cartTotal');
 
     if (cart.length === 0) {
         cartItems.innerHTML = '<p style="text-align: center; padding: 2rem; color: #999;">Keranjang masih kosong</p>';
-        cartTotal.textContent = 'Rp 0';
         return;
     }
 
-    let total = 0;
     let html = '';
 
     cart.forEach(item => {
-        const subtotal = item.price * item.quantity;
-        total += subtotal;
-
         html += `
             <div class="cart-item">
                 <div class="cart-item-info">
                     <h4>${item.name}</h4>
-                    <p>Rp ${item.price.toLocaleString('id-ID')}</p>
+                    <p>Kategori: ${item.category}</p>
                 </div>
                 <div class="cart-item-actions">
                     <button onclick="updateQuantity(${item.id}, -1)">-</button>
@@ -474,7 +468,6 @@ function displayCart() {
     });
 
     cartItems.innerHTML = html;
-    cartTotal.textContent = `Rp ${total.toLocaleString('id-ID')}`;
 }
 
 // Checkout via WhatsApp
@@ -484,20 +477,15 @@ function checkout() {
         return;
     }
 
-    let message = '*Pesanan Baru - Cozy Stitches*\n\n';
-    let total = 0;
+    let message = '*Halo, saya ingin memesan produk berikut:*\n\n';
 
     cart.forEach(item => {
-        const subtotal = item.price * item.quantity;
-        total += subtotal;
         message += `• ${item.name}\n`;
-        message += `  Jumlah: ${item.quantity}\n`;
-        message += `  Harga: Rp ${item.price.toLocaleString('id-ID')}\n`;
-        message += `  Subtotal: Rp ${subtotal.toLocaleString('id-ID')}\n\n`;
+        message += `  Kategori: ${item.category}\n`;
+        message += `  Jumlah: ${item.quantity}\n\n`;
     });
 
-    message += `*Total: Rp ${total.toLocaleString('id-ID')}*\n\n`;
-    message += 'Mohon konfirmasi pesanan ini. Terima kasih! 🙏';
+    message += 'Mohon informasi detail mengenai harga total dan ongkos kirim. Terima kasih! 🙏';
 
     const whatsappNumber = '6281391875248';
     const encodedMessage = encodeURIComponent(message);
