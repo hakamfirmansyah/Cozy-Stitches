@@ -292,21 +292,46 @@
                 </div>
                 <div class="contact-form">
                     <form id="customOrderForm">
-                        <input type="text" placeholder="Nama Lengkap" required>
-                        <input type="email" placeholder="Email" required>
-                        <input type="tel" placeholder="Nomor WhatsApp" required>
-                        <select required>
-                            <option value="">Pilih Kategori Produk</option>
-                            <option value="sweater">Sweater</option>
-                            <option value="topi">Topi</option>
-                            <option value="cardigan">Cardigan</option>
-                            <option value="vest">Vest</option>
-                            <option value="tas">Tas</option>
-                            <option value="bunga">Bunga</option>
-                            <option value="syal">Syal</option>
-                        </select>
-                        <textarea placeholder="Detail Pesanan Custom" rows="5" required></textarea>
-                        <button type="submit" class="btn btn-primary">Kirim Pesanan</button>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <span class="input-icon">👤</span>
+                                <input type="text" id="orderName" placeholder=" " required>
+                                <label for="orderName">Nama Lengkap</label>
+                            </div>
+                            <div class="form-group">
+                                <span class="input-icon">✉️</span>
+                                <input type="email" id="orderEmail" placeholder=" " required>
+                                <label for="orderEmail">Email</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <span class="input-icon">📱</span>
+                            <input type="tel" id="orderPhone" placeholder=" " required>
+                            <label for="orderPhone">Nomor WhatsApp</label>
+                        </div>
+                        <div class="form-group">
+                            <span class="input-icon">🧶</span>
+                            <select id="orderCategory" required>
+                                <option value="" disabled selected hidden></option>
+                                <option value="sweater">Sweater</option>
+                                <option value="topi">Topi</option>
+                                <option value="cardigan">Cardigan</option>
+                                <option value="vest">Vest</option>
+                                <option value="tas">Tas</option>
+                                <option value="bunga">Bunga</option>
+                                <option value="syal">Syal</option>
+                            </select>
+                            <label for="orderCategory" class="select-label">Kategori Produk</label>
+                        </div>
+                        <div class="form-group">
+                            <span class="input-icon" style="top: 15px;">✍️</span>
+                            <textarea id="orderDetail" placeholder=" " rows="4" required></textarea>
+                            <label for="orderDetail">Detail Pesanan Custom</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit-order">
+                            <span>Kirim Pesanan</span>
+                            <span class="btn-icon">➔</span>
+                        </button>
                     </form>
                 </div>
             </div>

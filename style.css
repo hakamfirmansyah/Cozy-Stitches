@@ -1472,29 +1472,130 @@ section {
 
 .contact-form {
     background-color: white;
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.input-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    z-index: 2;
+    pointer-events: none;
+    font-size: 1.1rem;
 }
 
 .contact-form input,
 .contact-form select,
 .contact-form textarea {
     width: 100%;
-    padding: 12px;
-    margin-bottom: 1rem;
+    padding: 16px 16px 16px 45px;
     border: 2px solid var(--light-gray);
-    border-radius: 8px;
+    border-radius: 12px;
     font-family: var(--font-body);
     font-size: 1rem;
-    transition: var(--transition);
+    color: var(--dark-brown);
+    background-color: var(--off-white);
+    transition: all 0.3s ease;
+    box-sizing: border-box;
 }
 
+.contact-form textarea {
+    padding-top: 15px;
+    resize: vertical;
+}
+
+.contact-form label {
+    position: absolute;
+    left: 45px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    font-size: 1rem;
+}
+
+.contact-form textarea + label {
+    top: 25px;
+}
+
+/* Floating Label Effects */
 .contact-form input:focus,
 .contact-form select:focus,
 .contact-form textarea:focus {
     outline: none;
-    border-color: var(--dusty-rose);
+    border-color: var(--sage-green);
+    background-color: white;
+    box-shadow: 0 0 0 4px rgba(143, 175, 143, 0.1);
+}
+
+.contact-form input:focus + label,
+.contact-form input:not(:placeholder-shown) + label,
+.contact-form textarea:focus + label,
+.contact-form textarea:not(:placeholder-shown) + label,
+.contact-form select:focus ~ label.select-label,
+.contact-form select:valid ~ label.select-label {
+    top: -10px;
+    left: 15px;
+    font-size: 0.85rem;
+    color: var(--sage-green);
+    background-color: white;
+    padding: 0 5px;
+    border-radius: 3px;
+    transform: translateY(0);
+}
+
+.contact-form select {
+    appearance: none;
+    cursor: pointer;
+}
+
+/* Fix for Select floating label */
+.contact-form select option:first-child {
+    display: none;
+}
+
+.btn-submit-order {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--terracotta), #A86847);
+    margin-top: 1rem;
+}
+
+.btn-submit-order .btn-icon {
+    transition: transform 0.3s ease;
+}
+
+.btn-submit-order:hover .btn-icon {
+    transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
 }
 
 /* ========================================
